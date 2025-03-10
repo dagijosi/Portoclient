@@ -56,11 +56,12 @@ export default function About() {
           <motion.div className="space-y-6" variants={itemVariants}>
             <div className="space-y-4">
               <p className="text-gray-400 text-lg leading-relaxed">
-                Hi, I'm <span className="text-secondary">Dagmawi Yoseph</span>,
-                a passionate Full-Stack Developer specializing in React,
-                TypeScript, Tailwind, and Node.js. I graduated from HilCoE
-                School of Science and Technology in 2023 with a degree in
-                Computer Science.
+                {`Hi, I'm `}
+                <span className="text-secondary">Dagmawi Yoseph</span>
+                {`, a passionate Full-Stack Developer specializing in React,
+                  TypeScript, Tailwind, and Node.js. I graduated from HilCoE
+                  School of Science and Technology in 2023 with a degree in
+                  Computer Science.`}
               </p>
 
               <div className="bg-gray-900 p-6 border border-gray-800 rounded-lg">
@@ -179,7 +180,7 @@ export default function About() {
                   "Contributed to increasing company revenue",
                 ],
               },
-            ].map((item, index) => (
+            ].map((item) => (
               <motion.div
                 key={item.year}
                 className="relative pl-16"

@@ -179,7 +179,7 @@ export default function First() {
         className="flex flex-wrap gap-6 mt-16 text-gray-500"
         variants={itemVariants}
       >
-        {socialLinks.map((link, index) => (
+        {socialLinks.map((link) => (
           <motion.a
             key={link.name}
             href={link.url}

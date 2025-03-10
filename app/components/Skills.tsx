@@ -97,7 +97,7 @@ export default function Skills() {
           whileInView={{ opacity: 1 }}
           className="gap-4 grid sm:grid-cols-2 md:grid-cols-4 mt-16"
         >
-          {['Redux', 'GraphQL', 'Docker', 'AWS', 'Jest', 'Git', 'REST API', 'Webpack'].map((skill, index) => (
+          {['Redux', 'GraphQL', 'Docker', 'AWS', 'Jest', 'Git', 'REST API', 'Webpack'].map((skill) => (
             <motion.div
               key={skill}
               initial={{ scale: 0.9 }}
