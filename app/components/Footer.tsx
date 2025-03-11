@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
@@ -11,14 +11,14 @@ export default function Footer() {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        delayChildren: 0.3
-      }
-    }
+        delayChildren: 0.3,
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 }
+    visible: { opacity: 1, y: 0 },
   };
 
   return (
@@ -64,23 +64,31 @@ export default function Footer() {
 
           {/* Navigation */}
           <motion.div variants={itemVariants}>
-            <h3 className="mb-4 font-semibold text-white text-lg">Navigation</h3>
-            <nav className="flex flex-col gap-2">
-              {['Home', 'About', 'Projects', 'Skills', 'Contact'].map((item) => (
-                <Link
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-gray-400 hover:text-secondary transition-colors"
-                >
-                  {item}
-                </Link>
-              ))}
+            <h3 className="mb-4 font-semibold text-white text-lg">
+              Navigation
+            </h3>
+            <nav className="gap-2 grid grid-cols-2">
+              {" "}
+              {/* Updated to use grid layout */}
+              {["Home", "About", "Projects", "Skills", "Contact"].map(
+                (item) => (
+                  <a
+                    key={item}
+                    href={`#${item.toLowerCase()}`}
+                    className="text-gray-400 hover:text-secondary transition-colors"
+                  >
+                    {item}
+                  </a>
+                )
+              )}
             </nav>
           </motion.div>
 
           {/* Built With */}
           <motion.div variants={itemVariants}>
-            <h3 className="mb-4 font-semibold text-white text-lg">Built With</h3>
+            <h3 className="mb-4 font-semibold text-white text-lg">
+              Built With
+            </h3>
             <div className="flex items-center gap-2 text-gray-400">
               <FaCode className="text-secondary" />
               <span>Next.js · Tailwind · Framer Motion</span>
