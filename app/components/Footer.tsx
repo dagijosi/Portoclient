@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin, FaCode } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
-import Link from "next/link";
 
 export default function Footer() {
   const containerVariants = {
